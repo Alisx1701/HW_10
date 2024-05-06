@@ -1,0 +1,31 @@
+    1  history 0>command_list.csv
+    2  git add .
+    3  git push
+    4  git --version\n
+    5  cd ~/Desktop/MyGitProjects\n
+    6  mkdir HW_10\n
+    8  history -c && rm ~/.zsh_history\n
+    9  touch ~/.zsh_history\n
+   10  git config --global user.name "Alisx1701"\n
+   11  git config --global user.email "alisik1@gmail.com"\n
+   12  git config --global --list\n
+   13  cd ~/Desktop/MyGitProjects/HW_10\n
+   14  git clone https://github.com/Alisx1701/HW_10.git .
+   15  pwd\n
+   16  touch text_ignore.txt\n
+   18  open -e .gitignore\n
+   21  git commit -m "Добавлен файл text_ignore.txt в .gitignore"\n
+   22  touch main_test.txt\n
+   25  git commit -m "Добавлен пустой файл main_test.txt"\n
+   26  git checkout -b develop\n
+   27  Switched to a new branch 'develop'\n
+   28  touch develop_test.txt\n
+   29  ls
+   31  git commit -m "Добавлен пустой файл develop_test.txt"\n
+   32  open -e develop_test.txt\n
+   33  git status\n
+   34  git add .\n
+   35  git commit -m "Изменен файл develop_test.txt"\n
+   36  git checkout main\n
+   37  git merge develop\n
+   38  git log --oneline\n
